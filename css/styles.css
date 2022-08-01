@@ -14,11 +14,86 @@
 
 /* Document */
 html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   background-color: var(--main-background);
 }
 
+/* Main Section */
+
 main {
   display: flex;
+  max-width: 69.375rem;
+  font-family: var(--inter);
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+}
+
+/* Description COlumn */
+
+.desc-column {
+  padding: 3rem 4rem 0 4.5rem;
+}
+
+.desc-title {
+  font-size: 2.25rem;
+  color: var(--main-heading);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.desc-content {
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  color: var(--main-paragraph);
+  padding-right: 5rem;
+}
+
+.stat-container {
+  display: flex;
+  margin-top: 4.5rem;
+}
+
+.stat-column {
+  flex: 100%;
+}
+
+.stat-heading {
+  color: var(--main-heading);
+  margin: 0;
+}
+
+.stat-content {
+  font-family: var(--lexend-deca);
+  font-size: 0.85rem;
+  color: var(--stat-headings);
+  margin: 0.25rem 0 0 0;
+}
+
+/* Image Column */
+
+.img-column {
+  position: relative;
+}
+
+.tint {
+  background-color: hsl(277, 100%, 30%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.img {
+  z-index: 1;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .img-desktop {
@@ -32,19 +107,24 @@ main {
 /* Footer */
 
 footer {
+  position: absolute;
   text-align: center;
+  right: 0;
+  left: 0;
+  bottom: 1rem;
 }
 
 .attribution {
   font-size: 11px;
+  color: var(--main-paragraph);
 }
 
 .attribution a {
-  color: white;
+  color: var(--main-paragraph);
 }
 
 .attribution a:hover,
 .attribution a:active,
 .attribution a:focus {
-  color: var(--soft-magenta);
+  color: var(--accent);
 }
