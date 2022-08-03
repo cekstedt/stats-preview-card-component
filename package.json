@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "pixel-glass": "^1.0.13"
+  }
+}
