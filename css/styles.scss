@@ -1,39 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
-/* Footer */
-footer {
-  /* margin-top: auto; */
-  position: absolute;
-  text-align: center;
-  right: 0;
-  left: 0;
-  bottom: 1rem;
-}
-@media (max-width: 1150px) {
-  footer {
-    position: static;
-    bottom: auto;
-  }
-}
-
-.attribution {
-  font-size: 11px;
-  color: hsla(0deg, 0%, 100%, 0.75);
-}
-
-.attribution a {
-  color: hsla(0deg, 0%, 100%, 0.75);
-}
-
-.attribution a:hover,
-.attribution a:active,
-.attribution a:focus {
-  color: hsl(277deg, 64%, 61%);
-}
+@import "config";
+@import "footer";
 
 /* Document */
 html {
-  background-color: hsl(233deg, 47%, 7%);
+  background-color: $main-background;
 }
 
 body {
@@ -48,32 +18,34 @@ body {
 }
 
 /* Main Section */
+
 main {
   display: flex;
   max-width: 69.375rem;
-  font-family: "Inter", sans-serif;
-  background-color: hsl(244deg, 38%, 16%);
+  font-family: $inter;
+  background-color: $card-background;
   border-radius: 0.5rem;
 }
 
 /* Description COlumn */
+
 .desc-column {
   padding: 3rem 4rem 0 4.5rem;
 }
 
 .desc-title {
   font-size: 2.25rem;
-  color: hsl(0deg, 0%, 100%);
+  color: $main-heading;
 }
 
 .accent {
-  color: hsl(277deg, 64%, 61%);
+  color: $accent;
 }
 
 .desc-content {
   letter-spacing: -0.5px;
   line-height: 1.6;
-  color: hsla(0deg, 0%, 100%, 0.75);
+  color: $main-paragraph;
   padding-right: 5rem;
 }
 
@@ -87,24 +59,25 @@ main {
 }
 
 .stat-heading {
-  color: hsl(0deg, 0%, 100%);
+  color: $main-heading;
   margin: 0;
 }
 
 .stat-content {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: $lexend-deca;
   font-size: 0.85rem;
-  color: hsla(0deg, 0%, 100%, 0.6);
+  color: $stat-headings;
   margin: 0.25rem 0 0 0;
 }
 
 /* Image Column */
+
 .img-column {
   position: relative;
 }
 
 .tint {
-  background-color: hsl(277deg, 100%, 30%);
+  background-color: hsl(277, 100%, 30%);
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   position: absolute;
@@ -129,5 +102,3 @@ main {
 .img-mobile {
   display: none;
 }
-
-/*# sourceMappingURL=styles.css.map */
