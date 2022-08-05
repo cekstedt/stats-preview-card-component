@@ -1,9 +1,20 @@
+// Globals
 @import "config";
 @import "reset";
 @import "utilities";
-@import "layouts";
+@import "typography";
+
+// Layouts
+@import "layouts/_l-fixedBottom.scss";
+@import "layouts/_l-flexHorizontal.scss";
+@import "layouts/_l-fullPage.scss";
+@import "layouts/_l-hero.scss";
+@import "layouts/_l-img.scss";
+@import "layouts/_l-twoColumn.scss";
+
+//Components
 @import "components/card";
 @import "components/contentContainer";
 @import "components/footer";
-@import "components/img";
+@import "components/imgTinted";
 @import "components/infoBlock";

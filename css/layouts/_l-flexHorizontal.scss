@@ -1,0 +1,14 @@
+// Layout for nested Supporting items.
+
+.l-flexHorizontal {
+  display: flex;
+  margin-top: 4.5rem;
+
+  > * {
+    flex-basis: 100%;
+  }
+
+  > p {
+    margin-top: 0.25rem;
+  }
+}

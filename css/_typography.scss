@@ -1,0 +1,25 @@
+body {
+  font-family: $sans;
+}
+
+// Font utilities
+
+.fontSize-small {
+  font-size: $fontSize-small;
+}
+
+.fontSize-large {
+  font-size: $fontSize-large;
+}
+
+.lineHeight-wide {
+  line-height: $lineHeight-wide;
+}
+
+.letterSpacing-tight {
+  letter-spacing: $letterSpacing-tight;
+}
+
+.fontFamily-secondary {
+  font-family: $sans-secondary;
+}

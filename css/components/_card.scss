@@ -1,5 +1,5 @@
 .card {
-  font-family: $inter;
   background-color: $card-background;
-  border-radius: 0.5rem;
+  border-radius: $borderRadius;
+  overflow: hidden;
 }

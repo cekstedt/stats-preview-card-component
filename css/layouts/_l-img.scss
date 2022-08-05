@@ -1,0 +1,17 @@
+.l-img-desktop {
+  display: block;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.l-img-mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: block;
+  }
+}
