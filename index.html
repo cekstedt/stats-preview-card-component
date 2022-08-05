@@ -10,12 +10,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="css/styles-original.css" />
+    <!-- <link rel="stylesheet" href="css/styles-original.css" /> -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Frontend Mentor | Stats preview card component</title>
 
     <!-- Pixel Glass -->
-    <style>
+    <!-- <style>
       html {
         background-repeat: no-repeat;
         background-position: 50% 0;
@@ -31,53 +31,57 @@
       }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
-    <script src="../node_modules/pixel-glass/script.js"></script>
+    <script src="../node_modules/pixel-glass/script.js"></script> -->
     <!-- // Pixel Glass -->
   </head>
 
   <body>
-    <div class="flex-container">
-      <main class="stat-card">
-        <div class="column desc-column">
-          <h1 class="desc-title">
-            Get
-            <span class="accent">
-              insights
-            </span>
-            that help your business grow.
-          </h1>
-          <p class="desc-content">
-            Discover the benefits of data analytics and make better decisions
-            regarding revenue, customer experience, and overall efficiency.
-          </p>
-          <div class="stat-container">
-            <div class="stat-column">
-              <h2 class="stat-heading">10k+</h2>
-              <p class="stat-content">COMPANIES</p>
+    <div class="contentContainer l-fullPage">
+      <main class="card l-twoColumn">
+        <div class="heroContainer l-hero">
+          <div class="infoBlock">
+            <h1 class="infoBlock-header">
+              Get <span class="u-colorAccent">insights</span> that help your
+              business grow.
+            </h1>
+            <p class="infoBlock-subline">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+
+          <div class="l-supportingContainer">
+            <div class="infoBlock">
+              <h2 class="infoBlock-header">10k+</h2>
+              <p class="infoBlock-subline">COMPANIES</p>
             </div>
-            <div class="stat-column">
-              <h2 class="stat-heading">314</h2>
-              <p class="stat-content">TEMPLATES</p>
+            <div class="infoBlock">
+              <h2 class="infoBlock-header">314</h2>
+              <p class="infoBlock-subline">TEMPLATES</p>
             </div>
-            <div class="stat-column">
-              <h2 class="stat-heading">12M+</h2>
-              <p class="stat-content">QUERIES</p>
+            <div class="infoBlock">
+              <h2 class="infoBlock-header">12M+</h2>
+              <p class="infoBlock-subline">QUERIES</p>
             </div>
           </div>
         </div>
-        <div class="column img-column">
-          <div class="tint"></div>
+
+        <figure class="imgContainer u-imgTint">
           <img
             src="./images/image-header-desktop.jpg"
-            class="img img-desktop"
+            class="img l-imgDesktop"
             alt="Productive Office"
+            width="540px"
+            height="446px"
           />
           <img
             src="./images/image-header-mobile.jpg"
-            class="img img-mobile"
+            class="img l-imgMobile"
             alt="Productive Office"
+            width="654px"
+            height="480px"
           />
-        </div>
+        </figure>
       </main>
     </div>
 

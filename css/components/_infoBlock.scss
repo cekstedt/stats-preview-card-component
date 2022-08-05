@@ -1,0 +1,23 @@
+.infoBlock-header {
+  // font-size: 2.25rem;
+  color: $main-heading;
+}
+
+.infoBlock-subline {
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  color: $main-paragraph;
+}
+
+// Stat version.
+// TODO: FIND BETTER SELECTOR
+
+.l-supportingContainer .infoBlock-header {
+  color: $main-heading;
+}
+
+.l-supportingContainer .infoBlock-subline {
+  font-family: $lexend-deca;
+  font-size: 0.85rem;
+  color: $stat-headings;
+}
