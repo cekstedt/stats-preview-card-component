@@ -1,3 +1,5 @@
+// Contains two elements: A header, and a subline.
+
 .infoBlock-header {
   color: $main-heading;
   font-weight: $fontWeight-bold;
@@ -5,4 +7,21 @@
 
 .infoBlock-subline {
   color: $main-paragraph;
+}
+
+// Specific subclasses for this markup page, to cut down markup class length.
+
+.infoBlock-subline--hero {
+  @extend .infoBlock-subline;
+  @extend .lineHeight-wide;
+  @extend .letterSpacing-tight;
+  @extend .u-bumpDown;
+  @extend .u-bumpLeft;
+}
+
+.infoBlock-subline--supporting {
+  @extend .infoBlock-subline;
+  @extend .fontSize-small;
+  @extend .fontFamily-secondary;
+  margin-top: 0.25rem;
 }

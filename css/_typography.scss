@@ -1,8 +1,28 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+$sans: "Inter", sans-serif;
+$sans-secondary: "Lexend Deca", sans-serif;
+
+// Page-level styles
+
 body {
   font-family: $sans;
 }
 
-// Font utilities
+// Typographic layout variables
+
+$fontSize-small: 0.85rem;
+$fontSize-large: 2.25rem;
+
+$lineHeight-wide: 1.6;
+
+$letterSpacing-tight: -0.5px;
+
+$fontWeight-normal: 400;
+$fontWeight-bold: 700;
+
+// Font utility classes
 
 .fontSize-small {
   font-size: $fontSize-small;

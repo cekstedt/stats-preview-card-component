@@ -15,11 +15,19 @@
   color: hsl(277deg, 64%, 61%);
 }
 
+.u-bumpDown, .infoBlock-subline--hero {
+  margin-top: 1.5rem;
+}
+
+.u-bumpLeft, .infoBlock-subline--hero {
+  margin-right: 4rem;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
 
-.fontSize-small {
+.fontSize-small, .infoBlock-subline--supporting {
   font-size: 0.85rem;
 }
 
@@ -27,15 +35,15 @@ body {
   font-size: 2.25rem;
 }
 
-.lineHeight-wide {
+.lineHeight-wide, .infoBlock-subline--hero {
   line-height: 1.6;
 }
 
-.letterSpacing-tight {
+.letterSpacing-tight, .infoBlock-subline--hero {
   letter-spacing: -0.5px;
 }
 
-.fontFamily-secondary {
+.fontFamily-secondary, .infoBlock-subline--supporting {
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -73,7 +81,7 @@ body {
 }
 
 .l-hero {
-  padding: 3rem 4rem 0 4.5rem;
+  padding: 0 4rem 0 4.5rem;
 }
 .l-hero > p {
   padding-right: 5rem;
@@ -165,8 +173,12 @@ body {
   font-weight: 700;
 }
 
-.infoBlock-subline {
+.infoBlock-subline, .infoBlock-subline--supporting, .infoBlock-subline--hero {
   color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.infoBlock-subline--supporting {
+  margin-top: 0.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
