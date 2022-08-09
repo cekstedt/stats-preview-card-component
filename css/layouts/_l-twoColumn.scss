@@ -1,21 +1,18 @@
 // Two Column Layout, responsive.
 
 .l-twoColumn {
+  overflow: hidden;
   display: flex;
   max-width: 69.375rem;
   align-items: center;
+  justify-content: left;
 
   @media (max-width: $mobile-breakpoint) {
     flex-direction: column-reverse;
+    align-items: start;
     flex-wrap: wrap;
     max-width: 40.875rem;
     width: 100vw;
-    margin: 1rem;
-  }
-}
-
-.l-twoColumn > * {
-  @media (max-width: $mobile-breakpoint) {
-    flex-grow: 1;
+    margin: 1.5rem;
   }
 }

@@ -1,15 +1,14 @@
 // Layout for footer.
 
 .l-fixedBottom {
-  /* margin-top: auto; */
   position: absolute;
   text-align: center;
   right: 0;
   left: 0;
   bottom: 1rem;
 
-  @media (max-width: $mobile-breakpoint) {
+  @media (max-height: 875px) {
     position: static;
-    bottom: auto;
+    margin-bottom: 1rem;
   }
 }

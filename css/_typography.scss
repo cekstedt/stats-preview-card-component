@@ -13,6 +13,7 @@ body {
 // Typographic layout variables
 
 $fontSize-small: 0.85rem;
+$fontSize-medium: 1.75rem;
 $fontSize-large: 2.25rem;
 
 $lineHeight-wide: 1.6;
@@ -21,25 +22,3 @@ $letterSpacing-tight: -0.5px;
 
 $fontWeight-normal: 400;
 $fontWeight-bold: 700;
-
-// Font utility classes
-
-.fontSize-small {
-  font-size: $fontSize-small;
-}
-
-.fontSize-large {
-  font-size: $fontSize-large;
-}
-
-.lineHeight-wide {
-  line-height: $lineHeight-wide;
-}
-
-.letterSpacing-tight {
-  letter-spacing: $letterSpacing-tight;
-}
-
-.fontFamily-secondary {
-  font-family: $sans-secondary;
-}

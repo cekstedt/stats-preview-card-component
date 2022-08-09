@@ -1,27 +1,40 @@
-// Contains two elements: A header, and a subline.
+.infoBlock {
+  @media (max-width: $mobile-breakpoint) {
+    text-align: center;
+  }
 
-.infoBlock-header {
-  color: $main-heading;
-  font-weight: $fontWeight-bold;
-}
+  // Contains two elements: A header, and a subline.
 
-.infoBlock-subline {
-  color: $main-paragraph;
-}
+  &-header {
+    color: $main-heading;
+    font-weight: $fontWeight-bold;
 
-// Specific subclasses for this markup page, to cut down markup class length.
+    &--hero {
+      font-size: $fontSize-large;
 
-.infoBlock-subline--hero {
-  @extend .infoBlock-subline;
-  @extend .lineHeight-wide;
-  @extend .letterSpacing-tight;
-  @extend .u-bumpDown;
-  @extend .u-bumpLeft;
-}
+      @media (max-width: $mobile-breakpoint) {
+        font-size: $fontSize-medium;
+      }
+    }
+  }
 
-.infoBlock-subline--supporting {
-  @extend .infoBlock-subline;
-  @extend .fontSize-small;
-  @extend .fontFamily-secondary;
-  margin-top: 0.25rem;
+  &-subline {
+    color: $main-paragraph;
+
+    &--hero {
+      line-height: $lineHeight-wide;
+      letter-spacing: $letterSpacing-tight;
+      margin-top: 1.5rem;
+
+      @media (min-width: $mobile-breakpoint) {
+        margin-right: 4rem;
+      }
+    }
+
+    &--supporting {
+      font-size: $fontSize-small;
+      font-family: $sans-secondary;
+      margin-top: 0.25rem;
+    }
+  }
 }

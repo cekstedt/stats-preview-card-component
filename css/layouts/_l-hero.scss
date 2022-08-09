@@ -1,9 +1,19 @@
 // Layout for Hero Column.
 
 .l-hero {
+  // Desktop size
   padding: 0 4rem 0 4.5rem;
 
   > p {
     padding-right: 5rem;
+  }
+
+  // Mobile size
+  @media (max-width: $mobile-breakpoint) {
+    padding: 2rem;
+
+    > p {
+      padding: 0;
+    }
   }
 }
