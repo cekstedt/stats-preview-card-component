@@ -35,7 +35,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Object Oriented CSS & Flexbox
+- Object Oriented Sass (OOSCSS) & Flexbox
 
 ## Author
 
