@@ -1,3 +1,17 @@
 .u-colorAccent {
   color: $accent;
 }
+
+.u-bumpDown-small {
+  margin-top: 0.25rem;
+}
+
+.u-bumpDown-large {
+  margin-top: 1.5rem;
+}
+
+.u-bumpLeft-mobile {
+  @media (min-width: $mobile-breakpoint) {
+    margin-right: 4rem;
+  }
+}

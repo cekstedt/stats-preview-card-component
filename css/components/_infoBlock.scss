@@ -24,17 +24,11 @@
     &--hero {
       line-height: $lineHeight-wide;
       letter-spacing: $letterSpacing-tight;
-      margin-top: 1.5rem;
-
-      @media (min-width: $mobile-breakpoint) {
-        margin-right: 4rem;
-      }
     }
 
     &--supporting {
       font-size: $fontSize-small;
       font-family: $sans-secondary;
-      margin-top: 0.25rem;
     }
   }
 }

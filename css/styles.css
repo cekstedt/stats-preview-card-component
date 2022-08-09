@@ -15,32 +15,22 @@
   color: hsl(277deg, 64%, 61%);
 }
 
+.u-bumpDown-small {
+  margin-top: 0.25rem;
+}
+
+.u-bumpDown-large {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 1150px) {
+  .u-bumpLeft-mobile {
+    margin-right: 4rem;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
-}
-
-.fontSize-small {
-  font-size: 0.85rem;
-}
-
-.fontSize-medium {
-  font-size: 1.75rem;
-}
-
-.fontSize-large {
-  font-size: 2.25rem;
-}
-
-.lineHeight-wide {
-  line-height: 1.6;
-}
-
-.letterSpacing-tight {
-  letter-spacing: -0.5px;
-}
-
-.fontFamily-secondary {
-  font-family: "Lexend Deca", sans-serif;
 }
 
 .l-fixedBottom {
@@ -202,17 +192,10 @@ body {
 .infoBlock-subline--hero {
   line-height: 1.6;
   letter-spacing: -0.5px;
-  margin-top: 1.5rem;
-}
-@media (min-width: 1150px) {
-  .infoBlock-subline--hero {
-    margin-right: 4rem;
-  }
 }
 .infoBlock-subline--supporting {
   font-size: 0.85rem;
   font-family: "Lexend Deca", sans-serif;
-  margin-top: 0.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
