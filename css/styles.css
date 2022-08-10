@@ -155,18 +155,12 @@ body {
 }
 
 .imgTinted {
-  position: relative;
+  background-color: hsl(277deg, 64%, 61%);
 }
 
-.imgTinted::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: hsla(277deg, 100%, 30%, 0.5);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.imgTinted > * {
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 @media (max-width: 1150px) {

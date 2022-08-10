@@ -1,16 +1,10 @@
-// Tint an image with the given color ($tint).
+// Tint an image with the given color
 
 .imgTinted {
-  position: relative;
+  background-color: $accent;
 }
 
-.imgTinted::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: $tint;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.imgTinted > * {
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
