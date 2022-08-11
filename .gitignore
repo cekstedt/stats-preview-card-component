@@ -16,3 +16,5 @@
 .prettierignorey
 
 node_modules
+dev
+dist
