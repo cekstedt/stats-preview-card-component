@@ -1,25 +1,22 @@
 "use strict";
 
-const readFile = require("fs").promises.readFile;
+const fs = require("fs").promises;
 const parse = require("node-html-parser").parse;
 
-const index = _readFile("src/index.html");
-const pixelGlass = _readFile("tools/pixel-glass.html");
+Promise.all([
+  fs.readFile("src/index.html"),
+  fs.readFile("tools/pixel-glass.html"),
+  fs.mkdir("dev", { recursive: true })
+])
+  .then(([index, pixelGlass]) => {
+    const root = parse(index.toString(), { comment: true });
+    const tool = parse(pixelGlass.toString(), { comment: true });
 
-Promise.all([index, pixelGlass]).then(([i, p]) => {
-  console.log(p);
-});
+    root.querySelector("head").appendChild(tool);
 
-console.log(pixelGlass);
-
-function _readFile(path) {
-  readFile(path)
-    .then(fileBuffer => {
-      // console.log(fileBuffer.toString());
-      return fileBuffer.toString();
-    })
-    .catch(error => {
-      console.error(error.message);
-      process.exit(1);
-    });
-}
+    return fs.writeFile("dev/index.html", root.toString());
+  })
+  .catch(error => {
+    console.error(error.message);
+    process.exit(1);
+  });

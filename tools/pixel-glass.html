@@ -1,26 +1,19 @@
 <!-- Pixel Glass -->
 <style>
-  HTML {
+  html {
     background-repeat: no-repeat;
-    background-position:  50% 0;
+    background-position: 50% 0;
     /* Mobile layout by default */
-    background-image: url( "img/320.png" );
-  }
-  /* Tablet */
-  @media ( min-width: 760px ) {
-    HTML {
-      /* Tablet layout */
-      background-image: url( "img/760.png" );
-    }
+    background-image: url("design/mobile-design.jpg");
   }
   /* Desktop */
-  @media ( min-width: 960px ) {
-    HTML {
+  @media (min-width: 1150px) {
+    html {
       /* Desktop layout */
-      background-image: url( "img/960.png" );
+      background-image: url("design/desktop-design.jpg");
     }
   }
 </style>
-<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-<script src="../node_modules/pixel-glass/script.js"></script>
+<link href="/pixel-glass/styles.css" rel="stylesheet" />
+<script src="/pixel-glass/script.js"></script>
 <!-- // Pixel Glass -->
