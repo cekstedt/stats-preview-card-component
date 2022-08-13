@@ -17,7 +17,7 @@
     "clean-dev": "rimraf dev",
     "clean": "run-p clean-*",
     "start": "run-p watch-dev serve-dev",
-    "dist": "run-s build-dist serve-dist"
+    "pre-dist": "run-s build-dist serve-dist"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
