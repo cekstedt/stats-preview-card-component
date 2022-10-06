@@ -1,0 +1,11 @@
+{
+  "name": "Stats Preview Card Component",
+  "repo": "https://github.com/cekstedt/FEM-Stats-Preview-Card-Component",
+  "challenger": "Frontend Mentor",
+  "challenge page": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
+  "hosted": "https://spiffy-toffee-c87cbb.netlify.app/",
+  "original": false,
+  "personal": false,
+  "thumbnail": "thumbnail.png",
+  "technologies": ["html", "css", "oocss", "sass", "npm-scripts"]
+}

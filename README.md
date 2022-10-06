@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/cekstedt/stats-preview-card-component)
+- Solution URL: [Github](https://github.com/cekstedt/FEM-Stats-Preview-Card-Component)
 - Live Site URL: [Netlify](https://spiffy-toffee-c87cbb.netlify.app/)
 
 ## My process

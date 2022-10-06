@@ -33,6 +33,6 @@
   "description": "This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cekstedt/stats-preview-card-component.git"
+    "url": "git+https://github.com/cekstedt/FEM-Stats-Preview-Card-Component.git"
   }
 }
