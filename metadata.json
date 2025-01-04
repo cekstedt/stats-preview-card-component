@@ -8,6 +8,5 @@
   "personal": false,
   "thumbnail": "thumbnail.png",
   "technologies": ["html", "css", "oocss", "sass", "npm-scripts"],
-  "status": "complete",
   "priority": "done"
 }
